@@ -6,7 +6,7 @@ const environment = environmentList[0];
 const configuration = {
   local: {
     env: "local",
-    port: 3000 || process.env.PORT,
+    port: 3000,
     url: "http://localhost:3000",
     mongoose: {
       url: "mongodb+srv://praveen:praveen@1999@cluster0.gmukc.mongodb.net/movies-fortunesoft?retryWrites=true&w=majority", // url to connect mongodb locally
