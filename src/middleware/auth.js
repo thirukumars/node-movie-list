@@ -26,7 +26,9 @@ const verifyCallback =
     // }
 
     req.user = user;
-    let token = req.get("authorization").split(" ")[1];
+    let token = req.get("authorization")
+      ? req.get("authorization").split(" ")[1]
+      : null;
     let payload;
     try {
       payload = jwt.verify(token, "FSMovies2021", (err, res) => {
