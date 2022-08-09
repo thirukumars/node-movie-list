@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
+    "engines": {
+    "node": "16.13.2"
+  },
+
   "scripts": {
     "start": "node src/index.js",
     "dev-start": "cross-env NODE_ENV=development nodemon src/index.js",
